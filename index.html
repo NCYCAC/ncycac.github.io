@@ -1,23 +1,176 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Use the title from a page's frontmatter if it has one -->
-    <title>Middleman</title>
-    <link href="/stylesheets/site.css" rel="stylesheet" />
-    <script src="/javascripts/site.js"></script>
-  </head>
-  <body>
-    <hr>
+<html xmlns="http:/www.w3.org/1999/xhtml">
+<head>
+  <title>Home</title>
+  <link href="/stylesheets/default_theme.css" rel="stylesheet" />
 
-<p>layout: &ldquo;homepage_layout&rdquo;</p>
+<body class="home blog ">
+  <div id="wrapper">
+    <div id="header">
+      <a href="/">
+        <img src="/images/logo.png" id="logo"/>
+      </a>
+      <div class="menu">
+        <ul>
+          <li class="current_page_item"><a href="/">HOME</a></li>
+          <li class="page_item page-item-5 page_item_has_children"><a href="/the-festival/">The Festival</a>
+            <ul class='children'>
+              <li class="page_item page-item-145"><a href="/the-festival/schedule/">2016 Schedule</a></li>
+              <li class="page_item page-item-10"><a href="/the-festival/meet-the-artists/">Meet the Artists</a></li>
+              <li class="page_item page-item-135"><a href="/the-festival/get-involved/">Get Involved</a></li>
+            </ul>
+          </li>
+          <li class="page_item page-item-12 page_item_has_children"><a href="/the-charity/">The Charity</a>
+            <ul class='children'>
+              <li class="page_item page-item-14"><a href="/the-charity/donate/">Donate</a></li>
+            </ul>
+          </li>
+          <li class="page_item page-item-16 page_item_has_children"><a href="/past-events/">Past Events</a>
+            <ul class='children'>
+              <li class="page_item page-item-266"><a href="/past-events/essays/">Essays</a></li>
+            </ul>
+          </li>
+          <li class="page_item page-item-18 page_item_has_children"><a href="/about-us/">About Us</a>
+            <ul class='children'>
+              <li class="page_item page-item-20"><a href="/about-us/the-board/">The Board</a></li>
+              <li class="page_item page-item-22"><a href="/about-us/contact-us/">Contact Us</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div> <!--end header-->
 
-<h2>title: &ldquo;Home&rdquo;</h2>
+  <div id="slideshow">
+    <div id="rotator">
+      <!-- meta slider -->
+      <div style="max-width: 800px;" class="metaslider metaslider-flex metaslider-35 ml-slider">
+        <div id="metaslider_container_35">
+          <div id="metaslider_35">
+              <ul class="slides">
+                  <li style="display: block; width: 100%;" class="slide-260 ms-image"><img src="/images/website_photo_new.jpg" height="400" width="800" alt="" class="slider-35 slide-260" style="margin: 0 auto; width: 85.287846481876%" /></li>
+              </ul>
+          </div>
+        </div>
+        <script type="text/javascript">
+            var metaslider_35 = function($) {
+                $('#metaslider_35').addClass('flexslider'); / theme/plugin conflict avoidance
+                $('#metaslider_35').flexslider({ 
+                    slideshowSpeed:8700,
+                    animation:"fade",
+                    controlNav:true,
+                    directionNav:true,
+                    pauseOnHover:true,
+                    direction:"horizontal",
+                    reverse:false,
+                    animationSpeed:3000,
+                    prevText:"&lt;",
+                    nextText:"&gt;",
+                    slideshow:true
+                });
+            };
+            var timer_metaslider_35 = function() {
+                var slider = !window.jQuery ? window.setTimeout(timer_metaslider_35, 100) : !jQuery.isReady ? window.setTimeout(timer_metaslider_35, 1) : metaslider_35(window.jQuery);
+            };
+            timer_metaslider_35();
+        </script>
+      </div>
+      <!--/ meta slider-->      
+    </div>
+  
+    <div id="description">
+      <p>
+        The 7th Annual NCYCAC Youth Music Festival this past Labor Day weekend was a grand success. We thank all of our sponsors, donors, participants, teachers, volunteers, and audience for making this our best festival yet.
+      </p>
+      <ul id="frontpage_socialmediabuttons">
+        <li class="frontpage_buttons">
+          <a href="https:/twitter.com/NCYCAC" target="_blank">
+            Twitter
+          </a>
+        </li>
+        <li class="frontpage_buttons">
+          <a href="https:/www.facebook.com/ncycac" target="_blank">
+              Facebook
+          </a>
+        </li>
+        <li class="frontpage_buttons">
+          <a href="https:/www.youtube.com/user/NCYCAC" target="_blank">
+              YouTube
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-<h1>Welcome to NCYCAC</h1>
+  <div id="panes" class="clearfix">
+      <div id="pane1" class="pane"> 
+        <a href="/about-us/">
+          <h1 class="pane"> About Us </h1>
+        </a>
+        <p class="pane">
+          Find out more about what NCYCAC is and what we do!
+        </p>
+      </div>
+      <div id="pane2" class="pane">
+        <a href="/the-charity/donate/">
+          <h1 class="pane"> Donate </h1>
+        </a>
+        <p class="pane">
+          Donate to the Tammy Lynn Center!
+        </p>
+      </div>
+      <div id="pane3" class="pane" style="border-right: 0px"> <!-- get rid of the border on this one -->
+        <a href="/the-festival/get-involved/">
+        <h1 class="pane"> Get Involved </h1>
+        </a>
+        <p class="pane">
+          Discover how you can be a part of the NCYCAC community!
+        </p>
+      </div>                            
+  </div>
 
-  </body>
+  <div id="container">
+    <div id="sidebar">
+      <ul>
+        <li class="widget">
+          <h2 class="widgettitle">Donors</h2>
+          <div class ="textwidget">
+
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div id="content">
+      <h1>Welcome to NCYCAC</h1>
+
+    </div> <!-- content-->
+  </div> <!--container-->
+
+  <div id="footer">
+    <p>Copyright 2016 
+    <a href="/"> North Carolina Youth Classical Arts for Charity
+    </a> &nbsp;| <a href="mailto:email.ncycac@gmail.com">email.ncycac@gmail.com</a>
+    </p>
+
+    <p>
+    <a href = "https:/www.facebook.com/ncycac"><i class="fa fa-facebook"></i></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href = "https:/twitter.com/ncycac"><i class="fa fa-twitter"></i></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href = "https:/www.youtube.com/user/NCYCAC"><i class="fa fa-youtube"></i></a>
+  </div>
+</div> <!-- wrapper -->
+
+
+<link rel='stylesheet' id='metaslider-flex-slider-css'  href='/stylesheets/flexslider.css' type='text/css' media='all' property='stylesheet' />
+<link rel='stylesheet' id='metaslider-public-css'  href='/stylesheets/metaslider_public.css' type='text/css' media='all' property='stylesheet' />
+<script type='text/javascript' src='/javascripts/wp-embed.min.js'></script>
+<script type='text/javascript' src='/javascripts/jquery.js'></script>
+<script type='text/javascript' src='/javascripts/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='/javascripts/jquery.flexslider-min.js'></script>
+<script type="text/javascript">
+jQuery(document).ready( function($) {
+  $("ul.menu").not(":has(li)").closest('div').prev('h3.widget-title').hide();
+});
+</script> 
+</body>
 </html>
