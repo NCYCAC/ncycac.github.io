@@ -1,0 +1,67 @@
+<html xmlns="http:/www.w3.org/1999/xhtml">
+<head>
+  <title><%= current_page.data.title || "NCYCAC" %></title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/default_theme.css">
+<body class="home blog ">
+  <div id="wrapper">
+    <div id="header">
+      <a href="/">
+        <img src="/images/logo.png" id="logo"/>
+      </a>
+      <%= partial "menu" %>
+    </div> <!--end header-->
+
+  <div id="container">
+    <div id="sidebar">
+      <ul>
+        <li class="widget">
+          <h2 class="widgettitle">Donors</h2>
+          <div class ="textwidget">
+
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div id="content">
+      <div class="post-5 page type-page hentry">
+        <div class="post-header a">
+          <h2><%= current_page.data.title %></h2>
+        </div>
+        <br>
+        <div class="entry clear">
+          <%= yield %>
+        </div>
+      </div>
+    </div> <!-- content-->
+  </div> <!--container-->
+
+  <div id="footer">
+    <p>Copyright 2016 
+    <a href="/"> North Carolina Youth Classical Arts for Charity
+    </a> &nbsp;| <a href="mailto:email.ncycac@gmail.com">email.ncycac@gmail.com</a>
+    </p>
+
+    <p>
+    <a href = "https:/www.facebook.com/ncycac"><i class="fa fa-facebook"></i></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href = "https:/twitter.com/ncycac"><i class="fa fa-twitter"></i></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href = "https:/www.youtube.com/user/NCYCAC"><i class="fa fa-youtube"></i></a>
+  </div>
+</div> <!-- wrapper -->
+
+
+<link rel='stylesheet' id='metaslider-flex-slider-css'  href='/stylesheets/flexslider.css' type='text/css' media='all' property='stylesheet' />
+<link rel='stylesheet' id='metaslider-public-css'  href='/stylesheets/metaslider_public.css' type='text/css' media='all' property='stylesheet' />
+<script type='text/javascript' src='/javascripts/wp-embed.min.js'></script>
+<script type='text/javascript' src='/javascripts/jquery.js'></script>
+<script type='text/javascript' src='/javascripts/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='/javascripts/jquery.flexslider-min.js'></script>
+<script type="text/javascript">
+jQuery(document).ready( function($) {
+  $("ul.menu").not(":has(li)").closest('div').prev('h3.widget-title').hide();
+});
+</script> 
+</body>
+</html>
